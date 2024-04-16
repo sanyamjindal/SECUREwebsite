@@ -32,6 +32,7 @@ body{
 }
 
 #navright{
+    padding-left: 650px;
     display: flex;
     justify-content: space-between;
     gap: 80px;
@@ -65,7 +66,7 @@ button{
     animation: gradient 15s ease infinite;
     font-size: 20px;
     background-size: 400% 400%;
-    margin: 20px;
+    margin: 20px 20px 20px 0;
     transition: transform 0.3s ease;
 }
 
@@ -98,7 +99,8 @@ button:hover{
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 40px; ;
+    padding: 40px 100px;
+    font-size: 26px;
 }
 
 #mainheading{
@@ -109,7 +111,9 @@ button:hover{
 .hero{
     display: flex;
     margin: 60px 40px;
-    height: 600px;
+    height: 700px;
+    padding: 60px 40px;
+
 }
 
 .heroimg{
@@ -131,7 +135,7 @@ p{
 }
 
 .heading{
-    margin: 20px 0;
+    margin-bottom: 30px;
 }
 
 #sql{
@@ -150,15 +154,21 @@ p{
     background-image: url(sniffing.jpg);
 }
 
+#xss{
+    background-image: url(xss.jpg);
+}
+
 footer{
+    margin-top: 100px;
     text-align: center;
     background-color: rgb(66, 66, 66);
-   padding: 20px;
+    padding: 20px;
 }
 
 .about{
-    padding: 40px;
+    padding: 80px;
     text-align: center;
+    margin-bottom: 150px;
 }
 
 .row{
@@ -242,4 +252,82 @@ form input, form textarea{
 form #btn{
     margin-top: 10px;
     margin-left: 0;
+}
+
+#go-to-top{
+    position: fixed;
+    bottom: 30px;
+    right: 10px;
+    /* background-color: rgba(187, 185, 185, 0.611); */
+    color: white;
+    border-radius: 10px;
+    width: 60px;
+    padding: 5px;
+    /* font-size: 25px; */
+    border: none;
+}
+
+
+/* For 1024 Resolution */
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1500px) {
+    .intro{
+        font-size: 20px;
+    }
+
+    #navright{
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+        margin-right: 100px;
+    }
+
+    #navleft{
+        padding-left: 100px;
+    }
+
+    .hero{
+        display: flex;
+        margin: 60px 40px;
+        height: 600px;
+        padding: 60px 20px;
+    
+    }
+    
+    .heroimg{
+        width: 40%;
+        padding: 20px;
+        /* background-image: url(hero.jpg); */
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .herotext{
+        width: 60%;
+        padding: 10px 40px;
+    }
+
+    p{
+        font-size: 18px;
+        /* line-height: 1.5; */
+    }
+
+    .heading{
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    button{
+        /* color: rgb(255, 255, 255);
+        background: linear-gradient(-45deg,#23a6d5, #23d5ab); */
+        width: 30%;
+        /* padding: 15px;
+        border-radius: 10px;
+        animation: gradient 15s ease infinite;
+        font-size: 20px;
+        background-size: 400% 400%;
+        margin: 20px 20px 20px 0;
+        transition: transform 0.3s ease; */
+    }
 }
